@@ -5,38 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="anime.min.js"></script>
     <link rel="stylesheet" href="css\style.css">
-
-
-    
-
-    <script>
-        function redirectToPage(pageURL) {
-          window.location.href = pageURL; 
-        }
-      </script>
     <title></title>
 </head>
 <body>
-    <script>
-        document.addEventListener('click', function(event) {
-          
-          var clickAnimation = document.createElement('div');
-          clickAnimation.className = 'click-animation';
-    
-          
-          clickAnimation.style.left = (event.clientX - 10) + 'px';
-          clickAnimation.style.top = (event.clientY - 10) + 'px';
-    
-          
-          document.body.appendChild(clickAnimation);
-    
-          
-          clickAnimation.addEventListener('animationend', function() {
-            document.body.removeChild(clickAnimation);
-          });
-        });
-      </script>
-
+  <script>
+    function redirectToContactPage() {
+        
+        const contactPageFileName = "index4.html";
+        
+       
+        window.location.href = contactPageFileName;
+    }
+</script>
 
    <header> 
     <div class="logo" onclick="redirectToPage('index.html')">
@@ -58,56 +38,56 @@
       
         <div class="sazhenci">Саженцы плодовых деревьев</div>
         
-        <div class="filter">Фильтр</div>
+        <div class="filter">Есть в наличии</div>
 
         <div class="filter-container">
             <div class="filter-checkbox">
-              <input type="checkbox" id="abrikos" class="filter-checkbox">
+              <input type="checkbox" id="abrikos" class="filter-checkbox" checked disabled>
               <label for="abrikos">Абрикос</label>
             </div>
           
             <div class="filter-checkbox">
-              <input type="checkbox" id="alycha" class="filter-checkbox">
+              <input type="checkbox" id="alycha" class="filter-checkbox" checked disabled>
               <label for="alycha">Алыча</label>
             </div>
           
             <div class="filter-checkbox">
-              <input type="checkbox" id="vishnya" class="filter-checkbox">
+              <input type="checkbox" id="vishnya" class="filter-checkbox"checked disabled>
               <label for="vishnya">Вишня</label>
             </div>
           
             <div class="filter-checkbox">
-              <input type="checkbox" id="grusha" class="filter-checkbox">
+              <input type="checkbox" id="grusha" class="filter-checkbox"checked disabled>
               <label for="grusha">Груша</label>
             </div>
           
             <div class="filter-checkbox">
-              <input type="checkbox" id="inzhir" class="filter-checkbox">
+              <input type="checkbox" id="inzhir" class="filter-checkbox"checked disabled>
               <label for="inzhir">Инжир</label>
             </div>
           
             <div class="filter-checkbox">
-              <input type="checkbox" id="mindal" class="filter-checkbox">
+              <input type="checkbox" id="mindal" class="filter-checkbox"checked disabled>
               <label for="mindal">Миндаль</label>
             </div>
           
             <div class="filter-checkbox">
-              <input type="checkbox" id="persik" class="filter-checkbox">
+              <input type="checkbox" id="persik" class="filter-checkbox"checked disabled>
               <label for="persik">Персик</label>
             </div>
           
             <div class="filter-checkbox">
-              <input type="checkbox" id="hurma" class="filter-checkbox">
+              <input type="checkbox" id="hurma" class="filter-checkbox"checked disabled>
               <label for="hurma">Хурма</label>
             </div>
           
             <div class="filter-checkbox">
-              <input type="checkbox" id="chereshnya" class="filter-checkbox">
+              <input type="checkbox" id="chereshnya" class="filter-checkbox"checked disabled>
               <label for="chereshnya">Черешня</label>
             </div>
           
             <div class="filter-checkbox">
-              <input type="checkbox" id="yablonia" class="filter-checkbox">
+              <input type="checkbox" id="yablonia" class="filter-checkbox"checked disabled>
               <label for="yablonia">Яблоня</label>
             </div>
           </div>
@@ -140,7 +120,7 @@
                 <span class="discounted-price">99 руб.</span>
                 <span class="original-price">362руб.</span>
               </div>
-              <button class="contact-button">Связаться</button>
+              <button class="contact-button" onclick="redirectToContactPage()">Связаться</button>
             </div>
             <div class="product">
                 <img src="imgs\груша.png" alt="Product 2">
@@ -149,7 +129,7 @@
                   <span class="discounted-price">109 руб.</span>
                   <span class="original-price">329руб.</span>
                 </div>
-                <button class="contact-button">Связаться</button>
+                <button class="contact-button" onclick="redirectToContactPage()">Связаться</button>
               </div>
               <div class="product">
                 <img src="imgs\персик золотая москва.png" alt="Product 3">
@@ -158,7 +138,7 @@
                   <span class="discounted-price">199 руб.</span>
                   <span class="original-price">549руб.</span>
                 </div>
-                <button class="contact-button">Связаться</button>
+                <button class="contact-button onclick="redirectToContactPage()"">Связаться</button>
               </div>
               <div class="product">
                 <img src="imgs\хурма.png" alt="Product 2">
@@ -167,7 +147,7 @@
                   <span class="discounted-price">323 руб.</span>
                   <span class="original-price">588руб.</span>
                 </div>
-                <button class="contact-button">Связаться</button>
+                <button class="contact-button" onclick="redirectToContactPage()">Связаться</button>
               </div>
               <div class="product">
                 <img src="imgs\наполеон.png" alt="Product 2">
@@ -176,7 +156,7 @@
                   <span class="discounted-price">149 руб.</span>
                   <span class="original-price">399руб.</span>
                 </div>
-                <button class="contact-button">Связаться</button>
+                <button class="contact-button" onclick="redirectToContactPage()">Связаться</button>
               </div>
               <div class="product">
                 <img src="imgs\вишня октава.png" alt="Product 2">
@@ -185,7 +165,7 @@
                   <span class="discounted-price">149 руб.</span>
                   <span class="original-price">439руб.</span>
                 </div>
-                <button class="contact-button">Связаться</button>
+                <button class="contact-button" onclick="redirectToContactPage()">Связаться</button>
               </div>
               <div class="product">
                 <img src="imgs\миндаль.png" alt="Product 2">
@@ -194,7 +174,7 @@
                   <span class="discounted-price">219 руб.</span>
                   <span class="original-price">399руб.</span>
                 </div>
-                <button class="contact-button">Связаться</button>
+                <button class="contact-button" onclick="redirectToContactPage()">Связаться</button>
               </div>
               <div class="product">
                 <img src="imgs\абрикос.png" alt="Product 2">
@@ -203,7 +183,7 @@
                   <span class="discounted-price">199 руб.</span>
                   <span class="original-price">494руб.</span>
                 </div>
-                <button class="contact-button">Связаться</button>
+                <button class="contact-button" onclick="redirectToContactPage()">Связаться</button>
               </div>
               <div class="product">
                 <img src="imgs\алыча.png" alt="Product 2">
@@ -212,7 +192,7 @@
                   <span class="discounted-price">139 руб.</span>
                   <span class="original-price">373руб.</span>
                 </div>
-                <button class="contact-button">Связаться</button>
+                <button class="contact-button" onclick="redirectToContactPage()">Связаться</button>
               </div>
               <div class="product">
                 <img src="imgs\вишня десертная.png" alt="Product 2">
@@ -221,7 +201,7 @@
                   <span class="discounted-price">149 руб.</span>
                   <span class="original-price">439руб.</span>
                 </div>
-                <button class="contact-button">Связаться</button>
+                <button class="contact-button" onclick="redirectToContactPage()">Связаться</button>
               </div>
               <div class="product">
                 <img src="imgs\инжир.png" alt="Product 2">
@@ -230,7 +210,7 @@
                   <span class="discounted-price">248 руб.</span>
                   <span class="original-price">450руб.</span>
                 </div>
-                <button class="contact-button">Связаться</button>
+                <button class="contact-button" onclick="redirectToContactPage()">Связаться</button>
               </div>
               <div class="product">
                 <img src="imgs\слива гигант.png " alt="Product 2">
@@ -239,7 +219,7 @@
                   <span class="discounted-price">139 руб.</span>
                   <span class="original-price">339руб.</span>
                 </div>
-                <button class="contact-button">Связаться</button>
+                <button class="contact-button" onclick="redirectToContactPage()">Связаться</button>
               </div>
         </div>
     </div>
